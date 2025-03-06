@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,200;1,14..32,300&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: rgb(13, 13, 22);
+  background-color: rgb(3, 3, 8);
 }
 .hero-section {
   height: 95vh;
@@ -43,7 +44,7 @@ nav > .logo {
 }
 .hero-text {
   position: relative;
-  height: 75vh;
+  min-height: 75vh;
   width: 50vw;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -86,14 +87,161 @@ button {
   font-size: 25px;
   font-weight: bold;
 }
-.spacing-rect {
+.bg-of-rect {
   position: relative;
+  height: 20vh;
+  width: 100%;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  position: absolute;
+}
+.spacing-rect {
+  box-sizing: border-box;
+  position: absolute;
   height: 1vh;
-  width: 90vw;
-  margin: auto;
-  background-color: rgb(11, 17, 23);
+  width: 100vw;
+
+  border: solid 0.25rem transparent;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+  border-radius: 30px;
+}
+.trending-now {
+  margin-top: 3rem;
+  margin-left: 10rem;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.trending-btn {
+  margin: 40px 0px 40px 0px;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  height: 250px;
+  width: 100%;
+
+  /* height: 220px; */
+}
+.trending-btn button {
+  line-height: 0;
+  border-radius: 15px;
+}
+
+button > img {
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 180px;
+  object-fit: cover;
   border: none;
-  border-top: 2px solid red;
-  border-radius: 19px;
-  box-shadow: 1px 0px 1px 1px aliceblue inset;
+  border-radius: 15px;
+}
+button > span {
+  bottom: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  -webkit-text-stroke: 2px rgb(236, 236, 236);
+  position: relative;
+  text-align: left;
+  left: -20px;
+  text-shadow: 0px 0px 0px rgb(16, 16, 16), 0 0 2em rgb(12, 12, 15),
+    0 0 2em rgb(1, 1, 1);
+}
+.more-reasons-to-join {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.more-reasons-to-join-div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 3rem;
+  height: 260px;
+  width: 80vw;
+  margin: auto;
+}
+.more-reasons-to-join-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 250px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(38, 38, 80),
+    rgba(32, 6, 6, 0.722)
+  );
+
+  border-radius: 15px;
+  padding: 25px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.more-reasons-to-join-text > h2 {
+  margin: 10px 3px;
+  color: white;
+  font-weight: 500;
+}
+.more-reasons-to-join-text p {
+  color: rgb(178, 176, 176);
+  line-height: 1.5;
+  font-size: 15px;
+}
+.more-reasons-to-join-card > svg {
+  align-self: flex-end;
+}
+
+.faqs {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  position: relative;
+  color: white;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.faq-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.faq-card {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(52, 52, 52);
+  color: aliceblue;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  padding: 30px 20px 30px 20px;
 }
