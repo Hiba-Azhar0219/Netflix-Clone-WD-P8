@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(13, 13, 22);
+}
+.hero-section {
+  height: 95vh;
+  width: 100vw;
+  background-image: url(assets/images/bg.jpg);
+
+  object-position: center center;
+}
+.bg-overlay {
+  position: absolute;
+  height: 95vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.695);
+}
+
+nav {
+  position: relative;
+  height: 10vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  /* background-color: antiquewhite; */
+}
+nav > .logo {
+  width: 150px;
+}
+.signin-btn > button {
+  background-color: red;
+  padding: 6px 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.hero-text {
+  position: relative;
+  height: 75vh;
+  width: 50vw;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-text {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+.hero-text p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.email-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.email-form > input,
+button {
+  border: none;
+  border-radius: 4px;
+}
+.email-form > input {
+  padding: 1.25rem 10rem 1.25rem 1rem;
+  background-color: rgba(10, 10, 10, 0.51);
+  border: 0.5px solid grey;
+}
+.email-form > button {
+  padding: 0.95rem 18px;
+  background-color: rgb(208, 6, 6);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.spacing-rect {
+  position: relative;
+  height: 1vh;
+  width: 90vw;
+  margin: auto;
+  background-color: rgb(11, 17, 23);
+  border: none;
+  border-top: 2px solid red;
+  border-radius: 19px;
+  box-shadow: 1px 0px 1px 1px aliceblue inset;
+}
